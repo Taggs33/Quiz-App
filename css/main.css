@@ -1,0 +1,119 @@
+.main {
+	height: 100vh;
+	background-image: url('../images/greenarrow.jpg');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+h1 {
+	position: absolute;
+	font-size: 30px;
+	bottom: 10%;
+	left: 8%;
+	color: green;
+}
+
+/*.questions {
+	width: 400px;
+	height: 400px;
+	background-image: url('../images/smalldc.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-left: auto;
+	margin-right: auto;
+}*/
+
+.question-1 {
+	position: absolute;
+	font-size: 20px;
+	left: 8%;
+	top: 8%;
+	height: 40%;
+	color: green;
+	padding: 10px;
+	/*background-image: url('../images/greenarrow.jpg');*/
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-style: groove;
+	border-color: green;
+	border-width: 2px;
+}
+
+ul { padding-left:20px; list-style:none; }
+
+li { 
+	margin-bottom:10px;
+	cursor: pointer;
+
+}
+li:before {    
+    font-family: 'FontAwesome';
+    content: '\f061';
+    margin:0 5px 0 -15px;
+}
+
+.fa-font {
+	padding: 20px;
+}
+
+/*.question-2 {
+	position: absolute;
+	font-size: 20px;
+	top: 8px;
+	right: 16px;
+	color: dimgray;
+}
+
+.question-3 {
+	position: absolute;
+	font-size: 20px;
+	bottom: 12px;
+	left: 16px;
+	color: dimgray;
+
+}
+
+.question-4 {
+	position: absolute;
+	font-size: 20px;
+	bottom: 12px;
+	right: 16px;
+	color: dimgray;
+}
+
+.quiz-button {
+	width: 100px;
+	margin-top: 410px;
+	margin-left: 295px;
+	height: 50px;
+	background-color: white;
+	border: 2px solid black;
+	border-radius: 5px;
+	color: red;
+	font-size: 20px;
+	font-weight: bold;	
+}
+
+.quiz-button a {
+	text-decoration: none;
+	color: black;
+}
+
+.quiz-button:hover {
+	background-color: blue;
+	border-color: red;
+}
+
+.begin {
+	left: 0;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 700px;
+	height: 500px;
+}*/
