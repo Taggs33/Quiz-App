@@ -6,9 +6,12 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/jquery-ui.min.css">
+  <link rel="stylesheet" href="css/jquery-ui.structure.min.css">
+  <link rel="stylesheet" href="css/jquery-ui.theme.min.css">
 	<script src="js/jquery-2.1.4.min.js"></script>
-	<script src="js/quiz.js"></script>
   <script src="js/jquery-ui.min.js"></script>
+	<script src="js/quiz.js"></script>
   </head>
   <body>
   	<section class="main">
@@ -30,7 +33,16 @@
               <li class="answer-4"></li>
             </ul>
         </div>
-          <div class="dialog-box"></div>
+          <div id="dialog-box-right" title="basic-dialog">
+            <p>GREAT SHOT</p>
+          </div>
+          <div id="dialog-box-wrong" title="basic-dialog">
+            <p>OFF THE MARK</p>
+          </div>
+          <div id="dialog-box-end" title="basic-dialog">
+            <p>THE END
+            GREAT JOB AND KEEP SHOOTING</p>
+          </div>    
       </div>
     </section>    
         <!--<div class="question-2">

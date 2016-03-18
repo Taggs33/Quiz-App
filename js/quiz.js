@@ -4,6 +4,10 @@ var displayedCount = 1;
 
 $(document).ready(function() {
 
+	$("#dialog-box-right").hide();
+	$("#dialog-box-end").hide();
+	$("#dialog-box-wrong").hide();
+
 	displayQuestion();
 
 	// increaseCount();
@@ -14,9 +18,14 @@ $(document).ready(function() {
 
 		checkAnswer( $(this) );
 
-		increaseCount();
-		displayCount();
-		displayQuestion();
+		if (displayedCount < 5) {
+			increaseCount();
+			displayCount();
+			displayQuestion();
+		} else {
+			endQuiz();
+		}
+		
 	});
 
 
@@ -113,14 +122,20 @@ function displayCount() {
 
 function checkAnswer(clickedElement) {
 	var userAnswer = clickedElement.text();
-	alert(count);
-	// alert("test");
-	// console.log(clickedElement.text());
+
 	if (userAnswer == quizItems[count].realAnswer) {
 		$(function() {
-    	$( "dialog-box" ).dialog();
-  });
+    		$( "#dialog-box-right" ).dialog();
+  		});
 	} else {
-		alert("you're wrong");
+		$(function() {
+    		$( "#dialog-box-wrong" ).dialog();
+  		});
 	}
+}
+
+function endQuiz() {
+	$(function() {
+    	$( "#dialog-box-end" ).dialog();
+  	});
 }
