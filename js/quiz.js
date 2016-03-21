@@ -16,20 +16,18 @@ $(document).ready(function() {
 	
 	$("li").click(function() {
 
-		checkAnswer( $(this) );
 
 		if (displayedCount < 5) {
+			checkAnswer( $(this) );
 			increaseCount();
 			displayCount();
 			displayQuestion();
 		} else {
 			endQuiz();
+			checkAnswer( $(this) );
 		}
 		
 	});
-
-
-
 
 
 
